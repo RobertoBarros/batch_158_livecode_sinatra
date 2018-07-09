@@ -1,0 +1,12 @@
+<h1>Todos os restaurantes</h1>
+
+<a href="/restaurants/new">Adicionar restaurante</a>
+
+<% @restaurants.each do |restaurant| %>
+  <p>
+    <a href="/restaurants/<%= restaurant.id %>">
+      Nome: <%= restaurant.name %> | Nota: <%= restaurant.rating %>
+    </a>
+  </p>
+
+<% end %>

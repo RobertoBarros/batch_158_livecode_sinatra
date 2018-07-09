@@ -1,0 +1,10 @@
+<h1>Editar restaurante</h1>
+
+<form action="update" method="post">
+  <p><input type="text" name="name" placeholder="Nome" value="<%= @restaurant.name %>"></p>
+  <p><input type="text" name="address" placeholder="Endereço" value="<%= @restaurant.address %>"></p>
+  <p><input type="text" name='rating' placeholder="Nota" value="<%= @restaurant.rating %>"></p>
+  <p>
+    <button>Salvar</button>
+  </p>
+</form>
